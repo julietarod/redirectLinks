@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirect to Google Forms</title>
+  </head>
+  <body>
+    <script>
+      // Randomly choose between Form A and Form B
+      var randomForm =
+        Math.random() < 0.5
+          ? "https://www.google.com/forms/about/"
+          : "https://workspace.google.com/business/signup/welcome?hl=en&source=gafb-features-canvas-en&ga_region=noram&ga_country=us&ga_lang=en&__utma=61317162.551000813.1691074855.1691074855.1691074855.1&__utmb=61317162.0.10.1691074858022&__utmc=61317162&__utmx=-&__utmz=61317162.1691074855.1.1.utmcsr=formsforwork|utmccn=hero|utmcmd=et|utmcct=tryformsforwork&__utmv=-&__utmk=246069443";
+      window.location.replace(randomForm);
+    </script>
+  </body>
+</html>
